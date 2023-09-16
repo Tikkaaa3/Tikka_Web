@@ -1,0 +1,49 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  background-color: #1A1A1D;
+  color:  whitesmoke;
+} 
+
+#about {
+  color: #950740;
+}
+
+#navbar {
+
+  color: #C3073F;
+  box-shadow: 0 3px 10px #4E4E50;
+
+}
+
+#custom-button {
+  border-radius: 9999px; /* Rounded corners for a circle */
+  padding: 0.75rem; /* Adjust padding as needed */
+  background-color: #950740; /* Custom light red background color */
+  color: whitesmoke; /* Custom cyan text color */
+  margin-left: 0.25rem; /* Adjust margin as needed */
+  margin-right: 0.25rem; /* Adjust margin as needed */
+  margin-top: 1rem; /* Adjust margin as needed */
+  margin-bottom: 1rem; /* Adjust margin as needed */
+  text-align: center; /* Center text within the button */
+  cursor: pointer; /* Change cursor on hover */
+
+  /* Define hover state */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Define hover style for the button */
+#custom-button:hover {
+  background-color: #6F2232; /* Custom dark red background color on hover */
+}
+
+#rectangle {
+  width: 1300px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border: 0.1px solid grey; /* Border color and width */
+  background-color: #1A1A1D; /* Background color */
+  margin: 0 auto; /* Center the div horizontally */
+  box-shadow: 0 3px 10px #374151;
+}

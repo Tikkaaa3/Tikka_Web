@@ -1,13 +1,87 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emre Tolga Kaptan</title>
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+  <div id="navbar" class="flex flex-row px-16 justify-between border-b text-2xl border-gray-500 p-5">
+    <div>
+      <h1 class="cursor-pointer hover:underline text-4xl font-bold">
+        Tikka
+      </h1>
+    </div>
+
+    <div class="flex">
+      <div class="mx-2">
+        <h1 class="cursor-pointer hover:underline">
+          About
+        </h1>
+      </div>
+
+      <div class="mx-2">
+        <h1 class="cursor-pointer hover:underline">
+          Skills
+        </h1>
+      </div>
+
+      <div class="mx-2">
+        <h1 class="cursor-pointer hover:underline">
+          Projects
+        </h1>
+      </div>
+
+      <div class="mx-2">
+        <h1 class="cursor-pointer hover:underline">
+          Contact
+        </h1>
+      </div>
+    </div>
+  </div>
+
+<!-- Space -->
+  <div class="p-20"></div>
+
+<!-- About -->
+  <div id="about" class="flex flex-row justify-between items-center">
+    <div class="pl-48">
+      <h1 class="text-7xl font-bold my-8">Hello, I am</h1>
+      <h1 class="text-7xl text-white font-bold my-8">Software Developer</h1>
+      <p class="text-custom-white">Talks about #python, #webdeveloper, #cloudcomputing, #softwaredeveloper, and #fullstackdeveloper</p>
+      <button id="custom-button">Show CV</button>
+      <button id="custom-button">Download CV</button>
+    </div>
+  
+    <div class="mx-2 pr-48">
+      <div class="w-96 h-96 rounded-full overflow-hidden">
+        <img src="/javascript.svg" alt="JavaScript Logo" class="object-cover w-full h-full" />
+      </div>
+    </div>
+  </div>
+<!-- Space -->
+<div class="py-20"></div>
+  <div id="rectangle" class="flex flex-row px-16 justify-between items-center">
+    <div class="flex"><h1>Projects</h1></div>
+    <div class="flex"><h1>Users</h1></div>
+    <div class="flex"><h1>Certificates</h1></div>
+    <div class="flex"><h1>Years</h1></div>
+</div>
+  
+<!-- Space -->
+<div class="py-36"></div>
+
+
+  <div id="app">
+
+  </div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+
 </html>
