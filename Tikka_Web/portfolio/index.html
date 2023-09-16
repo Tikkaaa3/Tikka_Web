@@ -11,8 +11,9 @@
 
 <body>
 
-<!-- Navbar -->
-  <div id="navbar" class="flex flex-row px-16 justify-between border-b text-2xl border-gray-500 p-5">
+  <!-- Navbar -->
+  <div id="navbar"
+    class="fixed top-0 left-0 right-0 flex flex-row px-16 justify-between border-b text-2xl border-custom-red p-5">
     <div>
       <h1 class="cursor-pointer hover:underline text-4xl font-bold">
         Tikka
@@ -46,38 +47,200 @@
     </div>
   </div>
 
-<!-- Space -->
+  <!-- Space -->
   <div class="p-20"></div>
 
-<!-- About -->
-  <div id="about" class="flex flex-row justify-between items-center">
+  <!-- main -->
+
+  <div id="about" class=" flex flex-row justify-between items-center">
     <div class="pl-48">
-      <h1 class="text-7xl font-bold my-8">Hello, I am</h1>
-      <h1 class="text-7xl text-white font-bold my-8">Software Developer</h1>
-      <p class="text-custom-white">Talks about #python, #webdeveloper, #cloudcomputing, #softwaredeveloper, and #fullstackdeveloper</p>
-      <button id="custom-button">Show CV</button>
-      <button id="custom-button">Download CV</button>
+      <h1 class="text-8xl font-bold my-8">Hello, I am</h1>
+      <h1 class="text-8xl text-white font-bold my-8">Software Developer</h1>
+      <p class="text-custom-white text-2xl">Talks about #python, #webdeveloper, #cloudcomputing, #softwaredeveloper, and
+        #fullstackdeveloper</p>
+      <button id="custom-button" class="pt-4">Show CV</button>
+      <button id="custom-button" class="pt-4">Download CV</button>
     </div>
-  
+
     <div class="mx-2 pr-48">
       <div class="w-96 h-96 rounded-full overflow-hidden">
         <img src="/javascript.svg" alt="JavaScript Logo" class="object-cover w-full h-full" />
       </div>
     </div>
   </div>
-<!-- Space -->
-<div class="py-20"></div>
-  <div id="rectangle" class="flex flex-row px-16 justify-between items-center">
-    <div class="flex"><h1>Projects</h1></div>
-    <div class="flex"><h1>Users</h1></div>
-    <div class="flex"><h1>Certificates</h1></div>
-    <div class="flex"><h1>Years</h1></div>
+
+
+  <!-- Space -->
+  <div class="py-10"></div>
+
+  <!-- rectange -->
+  <div id="rectangle" class="flex flex-row px-16 justify-between border-custom-red items-center font-bold text-xl">
+    <div class="flex">
+      <h1>Projects</h1>
+    </div>
+    <div class="flex">
+      <h1>Users</h1>
+    </div>
+    <div class="flex">
+      <h1>Certificates</h1>
+    </div>
+    <div class="flex">
+      <h1>Years</h1>
+    </div>
+  </div>
+
+  <!-- Space -->
+  <div class="py-36"></div>
+
+  <!-- about me -->
+
+  <div id="about" class=" flex flex-row justify-between ">
+
+    <div class="mr-48 mb-4 pl-48">
+      <div class="w-96 h-96 overflow-hidden">
+        <img src="/javascript.svg" alt="JavaScript Logo" class="object-cover w-full h-full" />
+      </div>
+    </div>
+
+    <div class="pr-48">
+      <h1 class="text-4xl mb-6 text-white font-bold">About Me</h1>
+      <p class="text-white text-2xl">I am a motivated university student pursuing an IT degree with a
+        working knowledge in programming languages and web
+        development technologies. I have experience working with HTML,
+        CSS, JavaScript, React.js, Node.js, Python, Django, Flask, and other
+        frameworks and libraries. I have also worked with Git and GitHub
+        for version control and collaborative software development,
+        ensuring efficient teamwork and streamlined code management.
+        Moreover, I am familiar with cloud computing concepts, such as
+        SaaS, PaaS, IaaS, Hybrid Cloud, and Cloud Native applications,
+        demonstrating an awareness of modern infrastructure and
+        adaptability to emerging technologies.</p>
+      <button
+        class="pt-4 pl-2 pb-2 pr-2 text-2xl hover:border-b-4 border-custom-light-red text-white">Education</button>
+      <button
+        class="pt-4 pl-2 pb-2 pr-2 text-2xl hover:border-b-4 border-custom-light-red text-white">Certification</button>
+    </div>
+
+  </div>
+
+  <!-- Space -->
+  <div class="py-36"></div>
+
+  <!-- skills -->
+  <div class="flex items-center justify-center h-6 pb-10">
+    <h1 class="text-6xl mb-6 font-bold text-white">Skills</h1>
+  </div>
+
+  <div class="flex flex-row justify-center">
+    <section>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-screen-xl mx-auto">
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">JavaScript</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">JavaScript</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">JavaScript</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Space -->
+  <div class="py-36"></div>
+
+  <!-- my projects -->
+  <div class="flex items-center justify-center h-6 pb-10">
+    <h1 class="text-6xl mb-6 font-bold text-white">Projects</h1>
+  </div>
+
+  <div class="flex flex-row justify-center">
+  <section>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 max-w-screen-xl mx-auto">
+
+      <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
+        <img src="./javascript.svg" class="mx-auto h-64 w-96" alt="JavaScript" />
+        <h6 class="text-2xl flex font-semibold mt-4">JavaScript Project</h6>
+      </div>
+
+      <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
+        <img src="./javascript.svg" class="mx-auto h-64 w-full" alt="JavaScript" />
+        <h6 class="text-2xl flex font-semibold mt-4">JavaScript Web-Site</h6>
+      </div>
+
+      <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
+        <img src="./vite.svg" class="mx-auto h-64 w-96" alt="Vite" />
+        <h6 class="text-2xl flex font-semibold mt-4">Vite Application</h6>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+  <!-- Space -->
+  <div class="py-36"></div>
+
+  <!-- Contact -->
+<div class="flex flex-row justify-between pb-24 border-b border-custom-light-red shadow-md shadow-custom-red">
+  <div class="mr-48 pl-48">
+    <h1 class="mb-2 text-2xl">Let's connect!</h1>
+    <p class="mb-4 text-white text-xl">
+      dkjasldjaslksdfjkashdkljfhasdkjfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdhfjaskdaaaaaaaaaaaaaaaaaaa
+    </p>
+  </div>
+
+  <div class="pr-48">
+    <form action="">
+      <h1 class="mb-2">Your Mail</h1>
+      <input type="text" class="mb-2">
+      <h1 class="mb-2">Subject</h1>
+      <input type="text" class="mb-2">
+      <h1 class="mb-2">Message</h1>
+      <input type="text" class="mb-2">
+    </form>
+  </div>
+</div>
+
+<!-- footer -->
+<div>
+  <footer class="my-24 flex flex-row justify-center text-2xl font-bold">
+    Emre Tolga Kaptan
+  </footer>
 </div>
   
-<!-- Space -->
-<div class="py-36"></div>
-
-
   <div id="app">
 
   </div>
