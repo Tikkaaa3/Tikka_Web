@@ -15,28 +15,36 @@
   <div id="navbar"
     class="fixed top-0 left-0 right-0 flex flex-row px-16 justify-between border-b text-2xl border-custom-red p-5">
     <div>
-      <h1 class="cursor-pointer hover:underline text-4xl font-bold">
+      <a href="#tikka">
+        <h1 class="cursor-pointer hover:underline text-4xl font-bold">
         Tikka
       </h1>
+      </a>
     </div>
 
     <div class="flex">
       <div class="mx-2">
-        <h1 class="cursor-pointer hover:underline">
+        <a href="#about-me">
+          <h1 class="cursor-pointer hover:underline">
           About
         </h1>
+        </a>        
       </div>
-
+      
       <div class="mx-2">
-        <h1 class="cursor-pointer hover:underline">
+        <a href="#skills">
+          <h1 class="cursor-pointer hover:underline">
           Skills
         </h1>
+        </a> 
       </div>
 
       <div class="mx-2">
-        <h1 class="cursor-pointer hover:underline">
-          Projects
-        </h1>
+        <a href="#projects">
+          <h1 class="cursor-pointer hover:underline">
+            Projects
+          </h1>
+        </a>
       </div>
 
       <div class="mx-2">
@@ -48,7 +56,7 @@
   </div>
 
   <!-- Space -->
-  <div class="p-20"></div>
+  <div class="p-20" id="tikka"></div>
 
   <!-- main -->
 
@@ -64,7 +72,7 @@
 
     <div class="mx-2 pr-48">
       <div class="w-96 h-96 rounded-full overflow-hidden">
-        <img src="/javascript.svg" alt="JavaScript Logo" class="object-cover w-full h-full" />
+        <img src="/char.jpg" alt="JavaScript Logo" class="object-cover w-full h-full" />
       </div>
     </div>
   </div>
@@ -90,15 +98,14 @@
   </div>
 
   <!-- Space -->
-  <div class="py-36"></div>
+  <div class="py-36" id="about-me"></div>
 
   <!-- about me -->
-
-  <div id="about" class=" flex flex-row justify-between ">
+  <div class=" flex flex-row justify-between">
 
     <div class="mr-48 mb-4 pl-48">
       <div class="w-96 h-96 overflow-hidden">
-        <img src="/javascript.svg" alt="JavaScript Logo" class="object-cover w-full h-full" />
+        <img src="/desktop.jpg" alt="JavaScript Logo" class="object-cover w-full h-full" />
       </div>
     </div>
 
@@ -124,7 +131,7 @@
   </div>
 
   <!-- Space -->
-  <div class="py-36"></div>
+  <div class="py-36" id="skills"></div>
 
   <!-- skills -->
   <div class="flex items-center justify-center h-6 pb-10">
@@ -180,7 +187,7 @@
   </div>
 
   <!-- Space -->
-  <div class="py-36"></div>
+  <div class="py-36" id="projects"></div>
 
   <!-- my projects -->
   <div class="flex items-center justify-center h-6 pb-10">
@@ -214,25 +221,27 @@
   <div class="py-36"></div>
 
   <!-- Contact -->
-<div class="flex flex-row justify-between pb-24 border-b border-custom-light-red shadow-md shadow-custom-red">
-  <div class="mr-48 pl-48">
+<div class="flex flex-row justify-between pb-24   shadow-sm shadow-custom-red">
+  <div class="pl-48 flex-shrink-0">
     <h1 class="mb-2 text-2xl">Let's connect!</h1>
     <p class="mb-4 text-white text-xl">
       dkjasldjaslksdfjkashdkljfhasdkjfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdhfjaskdaaaaaaaaaaaaaaaaaaa
     </p>
   </div>
 
-  <div class="pr-48">
-    <form action="">
+  <div class="pr-48 flex-shrink-0">
+    <form action="" class="flex flex-col justify-center px-48 border-2">
       <h1 class="mb-2">Your Mail</h1>
-      <input type="text" class="mb-2">
+      <input type="text" class="mb-2 bg-custom-black border border-custom-light-red">
       <h1 class="mb-2">Subject</h1>
-      <input type="text" class="mb-2">
+      <input type="text" class="mb-2 bg-custom-black border border-custom-light-red">
       <h1 class="mb-2">Message</h1>
-      <input type="text" class="mb-2">
+      <input type="text" class="mb-2 bg-custom-black border border-custom-light-red">
+      <button>Send Message</button>
     </form>
   </div>
 </div>
+
 
 <!-- footer -->
 <div>
