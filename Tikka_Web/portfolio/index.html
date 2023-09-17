@@ -48,9 +48,12 @@
       </div>
 
       <div class="mx-2">
-        <h1 class="cursor-pointer hover:underline">
+        <a href="#contact">
+          <h1 class="cursor-pointer hover:underline">
           Contact
         </h1>
+        </a>
+        
       </div>
     </div>
   </div>
@@ -135,7 +138,7 @@
 
   <!-- skills -->
   <div class="flex items-center justify-center h-6 pb-10">
-    <h1 class="text-6xl mb-6 font-bold text-white">Skills</h1>
+    <h1 class="text-4xl mb-6 font-bold text-white">Skills</h1>
   </div>
 
   <div class="flex flex-row justify-center">
@@ -191,7 +194,7 @@
 
   <!-- my projects -->
   <div class="flex items-center justify-center h-6 pb-10">
-    <h1 class="text-6xl mb-6 font-bold text-white">Projects</h1>
+    <h1 class="text-4xl mb-6 font-bold text-white">Projects</h1>
   </div>
 
   <div class="flex flex-row justify-center">
@@ -218,26 +221,37 @@
 </div>
 
   <!-- Space -->
-  <div class="py-36"></div>
+  <div class="py-36" id="contact"></div>
 
   <!-- Contact -->
-<div class="flex flex-row justify-between pb-24   shadow-sm shadow-custom-red">
-  <div class="pl-48 flex-shrink-0">
-    <h1 class="mb-2 text-2xl">Let's connect!</h1>
-    <p class="mb-4 text-white text-xl">
-      dkjasldjaslksdfjkashdkljfhasdkjfhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdhfjaskdaaaaaaaaaaaaaaaaaaa
-    </p>
+<!-- <div class="flex flex-row justify-between pb-24 shadow-sm shadow-custom-red"> -->
+<div class="flex flex-row pb-24 shadow-sm shadow-custom-red">
+  <!-- <div class="pl-24 mr-16"> -->
+  <div class="flex-auto w-1/3">
+    <div class="items-center flex flex-col ">
+      
+      <h1 class="w-2/3 text-2xl mb-6 text-white font-bold">Let's Connect</h1>
+      <p class="w-2/3 text-gray-300 text-lg ">I am currently actively seeking new opportunities. If you have any questions or would like to reach out, I'll do my utmost to respond promptly!</p>
+    </div>
   </div>
 
-  <div class="pr-48 flex-shrink-0">
-    <form action="" class="flex flex-col justify-center px-48 border-2">
-      <h1 class="mb-2">Your Mail</h1>
-      <input type="text" class="mb-2 bg-custom-black border border-custom-light-red">
-      <h1 class="mb-2">Subject</h1>
-      <input type="text" class="mb-2 bg-custom-black border border-custom-light-red">
-      <h1 class="mb-2">Message</h1>
-      <input type="text" class="mb-2 bg-custom-black border border-custom-light-red">
-      <button>Send Message</button>
+  <!-- <div class="pr-48 flex-2/3 bg-red-600"> -->
+  <div class="flex-auto w-2/3">
+    <!-- <form action="" class="flex flex-col pl-48"> -->
+    <form action="" class="flex flex-col items-center ">
+      <div class="w-7/12">
+        <h1 class="mb-2 font-bold">Your Mail</h1>
+        <input type="text" placeholder="tikkaaa3@gmail.com" class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+      </div>
+      <div class="w-7/12 my-4">
+        <h1 class="mb-2 font-bold">Subject</h1>
+        <input type="text" placeholder="Just wanted to say hi" class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+      </div>
+      <div class="w-7/12">
+        <h1 class="mb-2 font-bold">Message</h1>
+        <input type="text" placeholder="Let's talk about..." class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+      </div>
+      <button class="w-7/12 bg-custom-light-red hover:bg-custom-dark-red rounded-md py-2.5 my-3 font-bold">Send Message</button>
     </form>
   </div>
 </div>

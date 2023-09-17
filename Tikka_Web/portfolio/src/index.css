@@ -7,6 +7,21 @@ body {
   color:  whitesmoke;
 } 
 
+input {
+  text-align: left;
+}
+
+input:focus {
+  background-color:#1A1A1D;
+  border-color: #C3073F;
+  outline:#C3073F;
+}
+
+::selection {
+  background-color: #950740; /* Change this to your desired background color */
+  color: #ffffff; /* Change this to your desired text color */
+}
+
 #about {
   color: #950740;
 }
