@@ -56,8 +56,8 @@ input:focus {
 }
 
 #rectangle {
-  width: 1300px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
+  width: 1500px; /* Adjust the width as needed */
+  height: 120px; /* Adjust the height as needed */
   border: 0.1px; /* Border color and width */
   background-color: #1A1A1D; /* Background color */
   margin: 0 auto; /* Center the div horizontally */

@@ -17,8 +17,8 @@
     <div>
       <a href="#tikka">
         <h1 class="cursor-pointer hover:underline text-4xl font-bold">
-        Tikka
-      </h1>
+          Tikka
+        </h1>
       </a>
     </div>
 
@@ -26,17 +26,17 @@
       <div class="mx-2">
         <a href="#about-me">
           <h1 class="cursor-pointer hover:underline">
-          About
-        </h1>
-        </a>        
+            About
+          </h1>
+        </a>
       </div>
-      
+
       <div class="mx-2">
         <a href="#skills">
           <h1 class="cursor-pointer hover:underline">
-          Skills
-        </h1>
-        </a> 
+            Skills
+          </h1>
+        </a>
       </div>
 
       <div class="mx-2">
@@ -50,10 +50,10 @@
       <div class="mx-2">
         <a href="#contact">
           <h1 class="cursor-pointer hover:underline">
-          Contact
-        </h1>
+            Contact
+          </h1>
         </a>
-        
+
       </div>
     </div>
   </div>
@@ -70,7 +70,10 @@
       <p class="text-custom-white text-2xl">Talks about #python, #webdeveloper, #cloudcomputing, #softwaredeveloper, and
         #fullstackdeveloper</p>
       <button id="custom-button" class="pt-4">Show CV</button>
-      <button id="custom-button" class="pt-4">Download CV</button>
+      <a href="./Emre_Tolga_Kaptan_Resume.pdf" download="Your_PDF_File_Name.pdf">
+        <button id="custom-button" class="pt-4">Download CV</button>
+      </a>
+      
     </div>
 
     <div class="mx-2 pr-48">
@@ -79,25 +82,41 @@
       </div>
     </div>
   </div>
-
+  
+  <!-- pdf -->
+  <div class="flex flex-auto">
+    <div class="flex w-1/4"></div>
+    <div class="flex w-2/4"><embed src="./Emre_Tolga_Kaptan_Resume.pdf" type="application/pdf" width="%100" height="800"
+        class="w-full"></div>
+    <div class="flex w-1/4"></div>
+  </div>
 
   <!-- Space -->
   <div class="py-10"></div>
 
   <!-- rectange -->
   <div id="rectangle" class="flex flex-row px-16 justify-between border-custom-red items-center font-bold text-xl">
-    <div class="flex">
+
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl font-bold">3</h1>
       <h1>Projects</h1>
     </div>
-    <div class="flex">
+
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl font-bold">*3</h1>
       <h1>Users</h1>
     </div>
-    <div class="flex">
+
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl font-bold">13</h1>
       <h1>Certificates</h1>
     </div>
-    <div class="flex">
+
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl font-bold">1+</h1>
       <h1>Years</h1>
     </div>
+
   </div>
 
   <!-- Space -->
@@ -107,14 +126,14 @@
   <div class=" flex flex-row justify-between">
 
     <div class="mr-48 mb-4 pl-48">
-      <div class="w-96 h-96 overflow-hidden">
+      <div class="w-120 h-120 overflow-hidden">
         <img src="/desktop.jpg" alt="JavaScript Logo" class="object-cover w-full h-full" />
       </div>
     </div>
 
-    <div class="pr-48">
+    <div class="pr-48 pb-32">
       <h1 class="text-4xl mb-6 text-white font-bold">About Me</h1>
-      <p class="text-white text-2xl">I am a motivated university student pursuing an IT degree with a
+      <p class="text-white text-xl">I am a motivated university student pursuing an IT degree with a
         working knowledge in programming languages and web
         development technologies. I have experience working with HTML,
         CSS, JavaScript, React.js, Node.js, Python, Django, Flask, and other
@@ -126,9 +145,15 @@
         demonstrating an awareness of modern infrastructure and
         adaptability to emerging technologies.</p>
       <button
-        class="pt-4 pl-2 pb-2 pr-2 text-2xl hover:border-b-4 border-custom-light-red text-white">Education</button>
+        class="pt-4 pl-2 pb-2 pr-2 text-xl font-bold hover:border-b-4 border-custom-light-red text-white">Education</button>
       <button
-        class="pt-4 pl-2 pb-2 pr-2 text-2xl hover:border-b-4 border-custom-light-red text-white">Certification</button>
+        class="pt-4 pl-2 pb-2 pr-2 text-xl font-bold hover:border-b-4 border-custom-light-red text-white">Certification</button>
+      <div class="py-4">
+        <ul class="list-disc list-inside">
+          <li>Uniwersytet WSB Merito Wrocław</li>
+          <li>Wrocław University of Science and Technology</li>
+        </ul>
+      </div>  
     </div>
 
   </div>
@@ -143,46 +168,56 @@
 
   <div class="flex flex-row justify-center">
     <section>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-screen-xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 max-w-screen-xl mx-auto">
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
           <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">JavaScript</h6>
+          <h6 class="text-xl flex justify-center font-semibold mt-4">JavaScript</h6>
         </div>
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
-          <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">JavaScript</h6>
+          <img src="./typescript.svg" class="mx-auto h-16" alt="JavaScript" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">TypeScript</h6>
         </div>
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
-          <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">JavaScript</h6>
+          <img src="./react.svg" class="mx-auto h-16" alt="JavaScript" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">React</h6>
         </div>
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
-          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+          <img src="./node-js.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">Node.js</h6>
         </div>
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
-          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+          <img src="./python.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">Python</h6>
         </div>
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
-          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+          <img src="./django.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">Django</h6>
         </div>
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
-          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+          <img src="./flask.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">Flask</h6>
         </div>
 
         <div class="rounded-lg p-6 shadow-md shadow-custom-red">
-          <img src="./vite.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-2xl flex justify-center font-semibold mt-4">Vite</h6>
+          <img src="./html.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">HTML</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./css.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">CSS</h6>
+        </div>
+
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+          <img src="./tailwind-css.svg" class="mx-auto h-16" alt="Vite" />
+          <h6 class="text-xl flex justify-center font-semibold mt-4">Tailwind</h6>
         </div>
 
       </div>
@@ -198,72 +233,76 @@
   </div>
 
   <div class="flex flex-row justify-center">
-  <section>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 max-w-screen-xl mx-auto">
+    <section>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 max-w-screen-xl mx-auto">
 
-      <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
-        <img src="./javascript.svg" class="mx-auto h-64 w-96" alt="JavaScript" />
-        <h6 class="text-2xl flex font-semibold mt-4">JavaScript Project</h6>
+        <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
+          <img src="./javascript.svg" class="mx-auto h-64 w-96" alt="JavaScript" />
+          <h6 class="text-xl flex font-semibold mt-4">JavaScript Project</h6>
+        </div>
+
+        <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
+          <img src="./javascript.svg" class="mx-auto h-64 w-full" alt="JavaScript" />
+          <h6 class="text-xl flex font-semibold mt-4">JavaScript Web-Site</h6>
+        </div>
+
+        <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
+          <img src="./vite.svg" class="mx-auto h-64 w-96" alt="Vite" />
+          <h6 class="text-xl flex font-semibold mt-4">Vite Application</h6>
+        </div>
+
       </div>
-
-      <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
-        <img src="./javascript.svg" class="mx-auto h-64 w-full" alt="JavaScript" />
-        <h6 class="text-2xl flex font-semibold mt-4">JavaScript Web-Site</h6>
-      </div>
-
-      <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
-        <img src="./vite.svg" class="mx-auto h-64 w-96" alt="Vite" />
-        <h6 class="text-2xl flex font-semibold mt-4">Vite Application</h6>
-      </div>
-
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 
   <!-- Space -->
   <div class="py-36" id="contact"></div>
 
   <!-- Contact -->
-<!-- <div class="flex flex-row justify-between pb-24 shadow-sm shadow-custom-red"> -->
-<div class="flex flex-row pb-24 shadow-sm shadow-custom-red">
-  <!-- <div class="pl-24 mr-16"> -->
-  <div class="flex-auto w-1/3">
-    <div class="items-center flex flex-col ">
-      
-      <h1 class="w-2/3 text-2xl mb-6 text-white font-bold">Let's Connect</h1>
-      <p class="w-2/3 text-gray-300 text-lg ">I am currently actively seeking new opportunities. If you have any questions or would like to reach out, I'll do my utmost to respond promptly!</p>
+  <div class="flex flex-row pb-24 shadow-sm shadow-custom-red">
+    <!-- <div class="pl-24 mr-16"> -->
+    <div class="flex-auto w-1/3">
+      <div class="items-center flex flex-col ">
+
+        <h1 class="w-2/3 text-2xl mb-6 text-white font-bold">Let's Connect</h1>
+        <p class="w-2/3 text-gray-300 text-lg ">I am currently actively seeking new opportunities. If you have any
+          questions or would like to reach out, I'll do my utmost to respond promptly!</p>
+      </div>
+    </div>
+
+    <!-- <div class="pr-48 flex-2/3 bg-red-600"> -->
+    <div class="flex-auto w-2/3">
+      <!-- <form action="" class="flex flex-col pl-48"> -->
+      <form action="" class="flex flex-col items-center ">
+        <div class="w-7/12">
+          <h1 class="mb-2 font-bold">Your Mail</h1>
+          <input type="text" placeholder="tikkaaa3@gmail.com"
+            class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+        </div>
+        <div class="w-7/12 my-4">
+          <h1 class="mb-2 font-bold">Subject</h1>
+          <input type="text" placeholder="Just wanted to say hi"
+            class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+        </div>
+        <div class="w-7/12">
+          <h1 class="mb-2 font-bold">Message</h1>
+          <input type="text" placeholder="Let's talk about..."
+            class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+        </div>
+        <button class="w-7/12 bg-custom-light-red hover:bg-custom-dark-red rounded-md py-2.5 my-3 font-bold">Send
+          Message</button>
+      </form>
     </div>
   </div>
 
-  <!-- <div class="pr-48 flex-2/3 bg-red-600"> -->
-  <div class="flex-auto w-2/3">
-    <!-- <form action="" class="flex flex-col pl-48"> -->
-    <form action="" class="flex flex-col items-center ">
-      <div class="w-7/12">
-        <h1 class="mb-2 font-bold">Your Mail</h1>
-        <input type="text" placeholder="tikkaaa3@gmail.com" class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
-      </div>
-      <div class="w-7/12 my-4">
-        <h1 class="mb-2 font-bold">Subject</h1>
-        <input type="text" placeholder="Just wanted to say hi" class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
-      </div>
-      <div class="w-7/12">
-        <h1 class="mb-2 font-bold">Message</h1>
-        <input type="text" placeholder="Let's talk about..." class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
-      </div>
-      <button class="w-7/12 bg-custom-light-red hover:bg-custom-dark-red rounded-md py-2.5 my-3 font-bold">Send Message</button>
-    </form>
+
+  <!-- footer -->
+  <div>
+    <footer class="my-24 flex flex-row justify-center text-2xl font-bold">
+      Emre Tolga Kaptan
+    </footer>
   </div>
-</div>
 
-
-<!-- footer -->
-<div>
-  <footer class="my-24 flex flex-row justify-center text-2xl font-bold">
-    Emre Tolga Kaptan
-  </footer>
-</div>
-  
   <div id="app">
 
   </div>

@@ -16,8 +16,13 @@ export default {
         'custom-white': '#cbd5e1',
         
       },
-    },
+      height: {
+        '120': '30rem',
+      },
+      width: {
+        '120': '30rem',
+      },
   },
   plugins: [],
 }
-
+}
