@@ -1,5 +1,4 @@
-import viteLogo from '/vite.svg'
-/* import { setupCounter } from '.counter.js' */
+import { setupScrollToTopButton } from './scrollUtils.js';
 
 
 export default function main ()  {
@@ -11,7 +10,7 @@ export default function main ()  {
   `;
   
   appContainer.innerHTML += mainHTML;
-
+  setupScrollToTopButton();
   
 } 
 

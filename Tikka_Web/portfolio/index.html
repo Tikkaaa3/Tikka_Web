@@ -11,9 +11,16 @@
 
 <body>
 
+  <a href="#" id="scrollToTopBtn"
+    class="fixed bottom-5 right-5 w-16 h-16 flex items-center justify-center shadow-md shadow-custom-light-red hover:shadow-custom-blue">
+    <img src="up.png" class="w-16 h-16" />
+  </a>
+
+
+
   <!-- Navbar -->
   <div id="navbar"
-    class="fixed top-0 left-0 right-0 flex flex-row px-16 justify-between border-b text-2xl border-custom-red p-5">
+    class="hover:text-white z-50 text-custom-light-red fixed backdrop-blur-lg top-0 left-0 right-0 flex flex-row px-16 justify-between text-2xl p-5 shadow-md shadow-custom-light-red hover:shadow-custom-blue">
     <div>
       <a href="#tikka">
         <h1 class="cursor-pointer hover:underline text-4xl font-bold">
@@ -22,7 +29,7 @@
       </a>
     </div>
 
-    <div class="flex">
+    <div class="flex items-center">
       <div class="mx-2">
         <a href="#about-me">
           <h1 class="cursor-pointer hover:underline">
@@ -73,7 +80,7 @@
       <a href="./Emre_Tolga_Kaptan_Resume.pdf" download="Your_PDF_File_Name.pdf">
         <button id="custom-button" class="pt-4">Download CV</button>
       </a>
-      
+
     </div>
 
     <div class="mx-2 pr-48">
@@ -82,39 +89,42 @@
       </div>
     </div>
   </div>
-  
+
   <!-- pdf -->
   <div class="flex flex-auto">
-    <div class="flex w-1/4"></div>
-    <div class="flex w-2/4"><embed src="./Emre_Tolga_Kaptan_Resume.pdf" type="application/pdf" width="%100" height="800"
+    <div class="flex w-1/12 xs:w-2/12 2xl:w-1/4"></div>
+    <div class="flex h-120 md:h-800 w-10/12 xs:w-8/12 2xl:w-2/4"><embed src="./Emre_Tolga_Kaptan_Resume.pdf" type="application/pdf" width="%100" height="%100"
         class="w-full"></div>
-    <div class="flex w-1/4"></div>
+    <div class="flex w-1/12 xs:w-2/12 2xl:w-1/4"></div>
   </div>
 
   <!-- Space -->
   <div class="py-10"></div>
 
   <!-- rectange -->
-  <div id="rectangle" class="flex flex-row px-16 justify-between border-custom-red items-center font-bold text-xl">
+  <div 
+    class="h-16 md:h-24 mx-8 sm:mx-24 flex items-center bg-custom-black font-bold text-xl shadow-md shadow-custom-light-red hover:shadow-custom-blue">
 
-    <div class="flex flex-col items-center">
-      <h1 class="text-4xl font-bold">3</h1>
-      <h1>Projects</h1>
-    </div>
-
-    <div class="flex flex-col items-center">
-      <h1 class="text-4xl font-bold">*3</h1>
-      <h1>Users</h1>
-    </div>
-
-    <div class="flex flex-col items-center">
-      <h1 class="text-4xl font-bold">13</h1>
-      <h1>Certificates</h1>
-    </div>
-
-    <div class="flex flex-col items-center">
-      <h1 class="text-4xl font-bold">1+</h1>
-      <h1>Years</h1>
+    <div class="px-4 w-full flex flex-row justify-between items-center ">
+      <div class="flex flex-col items-center">
+        <h1 class="text-2xl md:text-4xl font-bold">3</h1>
+        <h1 class="text-sm xs:text-md md:text-xl">Projects</h1>
+      </div>
+  
+      <div class="flex flex-col items-center">
+        <h1 class="text-2xl md:text-4xl font-bold">*3</h1>
+        <h1 class="text-sm xs:text-md md:text-xl">Users</h1>
+      </div>
+  
+      <div class="flex flex-col items-center">
+        <h1 class="text-2xl md:text-4xl font-bold">13</h1>
+        <h1 class="text-sm xs:text-md md:text-xl">Certificates</h1>
+      </div>
+  
+      <div class="flex flex-col items-center">
+        <h1 class="text-2xl md:text-4xl font-bold">1+</h1>
+        <h1 class="text-sm xs:text-md md:text-xl">Years</h1>
+      </div>
     </div>
 
   </div>
@@ -123,17 +133,19 @@
   <div class="py-36" id="about-me"></div>
 
   <!-- about me -->
-  <div class=" flex flex-row justify-between">
+  <div class=" flex flex-col lg:flex-row justify-between mx-12 lg:mx-24 2xl:mx-48">
 
-    <div class="mr-48 mb-4 pl-48">
-      <div class="w-120 h-120 overflow-hidden">
+    <!-- <div class="mr-48 mb-4 pl-48 bg-blue-600"> -->
+    <div class="mb-4">
+      <div class="w-full h-full lg:w-96 lg:h-96 2xl:w-120 2xl:h-120 overflow-hidden">
         <img src="/desktop.jpg" alt="JavaScript Logo" class="object-cover w-full h-full" />
       </div>
     </div>
 
-    <div class="pr-48 pb-32">
+    <!-- <div class="pr-48 pb-32 bg-orange-600"> -->
+    <div class="lg:ml-24">
       <h1 class="text-4xl mb-6 text-white font-bold">About Me</h1>
-      <p class="text-white text-xl">I am a motivated university student pursuing an IT degree with a
+      <p class="text-white xs:text-lg 2xl:text-xl">I am a motivated university student pursuing an IT degree with a
         working knowledge in programming languages and web
         development technologies. I have experience working with HTML,
         CSS, JavaScript, React.js, Node.js, Python, Django, Flask, and other
@@ -153,7 +165,7 @@
           <li>Uniwersytet WSB Merito Wrocław</li>
           <li>Wrocław University of Science and Technology</li>
         </ul>
-      </div>  
+      </div>
     </div>
 
   </div>
@@ -168,54 +180,54 @@
 
   <div class="flex flex-row justify-center">
     <section>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 max-w-screen-xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-10 max-w-screen-xl mx-auto">
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">JavaScript</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./typescript.svg" class="mx-auto h-16" alt="JavaScript" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">TypeScript</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./react.svg" class="mx-auto h-16" alt="JavaScript" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">React</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./node-js.svg" class="mx-auto h-16" alt="Vite" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">Node.js</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./python.svg" class="mx-auto h-16" alt="Vite" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">Python</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./django.svg" class="mx-auto h-16" alt="Vite" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">Django</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./flask.svg" class="mx-auto h-16" alt="Vite" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">Flask</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./html.svg" class="mx-auto h-16" alt="Vite" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">HTML</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./css.svg" class="mx-auto h-16" alt="Vite" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">CSS</h6>
         </div>
 
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red">
+        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
           <img src="./tailwind-css.svg" class="mx-auto h-16" alt="Vite" />
           <h6 class="text-xl flex justify-center font-semibold mt-4">Tailwind</h6>
         </div>
@@ -234,26 +246,82 @@
 
   <div class="flex flex-row justify-center">
     <section>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 max-w-screen-xl mx-auto">
-
-        <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
-          <img src="./javascript.svg" class="mx-auto h-64 w-96" alt="JavaScript" />
-          <h6 class="text-xl flex font-semibold mt-4">JavaScript Project</h6>
-        </div>
-
-        <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
-          <img src="./javascript.svg" class="mx-auto h-64 w-full" alt="JavaScript" />
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  2xl:grid-cols-3 mx-10">
+        <!-- Card 1 -->
+        <div
+          class="rounded-lg mx-4 p-6 w-72 xs:w-120 lg:w-96 custom-sm:w-120 my-4 shadow-md shadow-custom-red hover:shadow-custom-blue relative">
+          <video width="full" height="240" autoplay loop muted>
+            <source src="portfolio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <h6 class="text-xl flex font-semibold mt-4">JavaScript Web-Site</h6>
+          <!-- Buttons appear absolutely within this container -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-opacity-50 backdrop-blur-5 rounded-lg">
+            <img src="eye.png" alt="eye Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+            <img src="code.png" alt="code Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+          </div>
         </div>
 
-        <div class="rounded-lg mx-4 p-6 shadow-md shadow-custom-red">
-          <img src="./vite.svg" class="mx-auto h-64 w-96" alt="Vite" />
-          <h6 class="text-xl flex font-semibold mt-4">Vite Application</h6>
+        <!-- Card 2 -->
+        <div
+          class="rounded-lg mx-4 p-6 w-72 xs:w-120 lg:w-96 my-4 custom-sm:w-120  shadow-md shadow-custom-red hover:shadow-custom-blue relative">
+          <video width="full" height="240" autoplay loop muted>
+            <source src="portfolio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h6 class="text-xl flex font-semibold mt-4">JavaScript Web-Site</h6>
+          <!-- Buttons appear absolutely within this container -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-opacity-50 backdrop-blur-5 rounded-lg">
+            <img src="eye.png" alt="eye Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+            <img src="code.png" alt="code Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="rounded-lg mx-4 p-6 w-72 xs:w-120 lg:w-96 my-4 custom-sm:w-120 shadow-md shadow-custom-red hover:shadow-custom-blue relative">
+          <video width="full" height="240" autoplay loop muted>
+            <source src="portfolio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h6 class="text-xl flex font-semibold mt-4">JavaScript Web-Site</h6>
+          <!-- Buttons appear absolutely within this container -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-opacity-50 backdrop-blur-5 rounded-lg">
+            <img src="eye.png" alt="eye Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+            <img src="code.png" alt="code Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+          </div>
+        </div>
+
+        <div
+          class="rounded-lg mx-4 p-6 w-72 xs:w-120 lg:w-96 my-4 custom-sm:w-120 shadow-md shadow-custom-red hover:shadow-custom-blue relative">
+          <video width="full" height="240" autoplay loop muted>
+            <source src="portfolio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h6 class="text-xl flex font-semibold mt-4">JavaScript Web-Site</h6>
+          <!-- Buttons appear absolutely within this container -->
+          <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-opacity-50 backdrop-blur-5 rounded-lg">
+            <img src="eye.png" alt="eye Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+            <img src="code.png" alt="code Icon"
+              class="icon w-16 h-16 text-custom-light-red hover:text-custom-dark-red mx-2" />
+          </div>
         </div>
 
       </div>
     </section>
   </div>
+
 
   <!-- Space -->
   <div class="py-36" id="contact"></div>
