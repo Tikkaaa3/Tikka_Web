@@ -21,83 +21,28 @@
   <!-- Navbar -->
   <div id="navbar"
     class="hidden hover:text-white z-50 text-custom-light-red fixed backdrop-blur-lg top-0 left-0 right-0 xs:flex flex-row px-16 justify-between text-2xl p-5 shadow-md shadow-custom-light-red hover:shadow-custom-blue">
-    <div>
-      <a href="#tikka">
-        <h1 class="cursor-pointer hover:underline text-4xl font-bold">
-          Tikka
-        </h1>
-      </a>
+    <div id="navbarL">
+
     </div>
 
-    <div class="flex items-center">
-      <div class="mx-2">
-        <a href="#about-me">
-          <h1 class="cursor-pointer hover:underline">
-            About
-          </h1>
-        </a>
-      </div>
+    <div id="navbarR" class="flex items-center">
 
-      <div class="mx-2">
-        <a href="#skills">
-          <h1 class="cursor-pointer hover:underline">
-            Skills
-          </h1>
-        </a>
-      </div>
-
-      <div class="mx-2">
-        <a href="#projects">
-          <h1 class="cursor-pointer hover:underline">
-            Projects
-          </h1>
-        </a>
-      </div>
-
-      <div class="mx-2">
-        <a href="#contact">
-          <h1 class="cursor-pointer hover:underline">
-            Contact
-          </h1>
-        </a>
-
-      </div>
     </div>
   </div>
 
   <!-- Space -->
-  <div class="p-20" id="tikka"></div>
+  <div class="p-20" id="Tikka"></div>
 
   <!-- main -->
-  <div class="mb-48 my-64 h-16 custom-sm:my-48 md:h-24 mx-8 sm:mx-24 flex items-center bg-custom-black font-bold text-xl">
+  <div id="main" class="mb-48 my-64 h-16 custom-sm:my-48 md:h-24 mx-8 sm:mx-24 flex items-center bg-custom-black font-bold text-xl">
 
-    <div id="about" class="flex flex-col items-center custom-sm:flex-row justify-between custom-sm:items-stretch">
-      <div class="custom-sm:pl-48 order-2 custom-sm:order-1">
-        <h1 class="text-6xl 2xl:text-8xl font-bold my-8">Hello, I am</h1>
-        <h1 class="text-6xl 2xl:text-8xl text-white font-bold my-8">Software Developer</h1>
-        <p class="text-custom-white text-xl 2xl:text-2xl">Talks about #python, #webdeveloper, #cloudcomputing,
-          #softwaredeveloper, and #fullstackdeveloper</p>
-        <button id="custom-button" class="pt-4">Show CV</button>
-        <a href="./Emre_Tolga_Kaptan_Resume.pdf" download="Your_PDF_File_Name.pdf">
-          <button id="custom-button" class="pt-4">Download CV</button>
-        </a>
-      </div>
 
-      <div class="mx-2 custom-sm:pr-48 order-1 custom-sm:order-2 items-center">
-        <div class="w-64 h-64 lg:w-72 lg:h-72 2xl:w-96 2xl:h-96 rounded-full overflow-hidden">
-          <img src="/char.jpg" alt="Avatar Logo" class="object-cover w-full h-full" />
-        </div>
-      </div>
-    </div>
 
   </div>
 
   <!-- pdf -->
-  <div class="mt-96 custom-xs:mt-72 custom-sm:mt-64 flex flex-auto">
-    <div class="flex w-1/12 xs:w-2/12 2xl:w-1/4"></div>
-    <div class="flex h-120 md:h-800 w-10/12 xs:w-8/12 2xl:w-2/4"><embed src="./Emre_Tolga_Kaptan_Resume.pdf"
-        type="application/pdf" width="%100" height="%100" class="w-full"></div>
-    <div class="flex w-1/12 xs:w-2/12 2xl:w-1/4"></div>
+  <div id="pdf" class="mt-96 custom-xs:mt-72 custom-sm:mt-64 flex flex-auto">
+    
   </div>
 
   <!-- Space -->
@@ -107,32 +52,14 @@
   <div
     class="h-16 md:h-24 mx-8 sm:mx-24 flex items-center bg-custom-black font-bold text-xl shadow-md shadow-custom-light-red hover:shadow-custom-blue">
 
-    <div class="px-4 w-full flex flex-row justify-between items-center ">
-      <div class="flex flex-col items-center">
-        <h1 class="text-2xl md:text-4xl font-bold">3</h1>
-        <h1 class="text-sm xs:text-md md:text-xl">Projects</h1>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <h1 class="text-2xl md:text-4xl font-bold">*3</h1>
-        <h1 class="text-sm xs:text-md md:text-xl">Users</h1>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <h1 class="text-2xl md:text-4xl font-bold">13</h1>
-        <h1 class="text-sm xs:text-md md:text-xl">Certificates</h1>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <h1 class="text-2xl md:text-4xl font-bold">1+</h1>
-        <h1 class="text-sm xs:text-md md:text-xl">Years</h1>
-      </div>
+    <div id="rectangle1" class="px-4 w-full flex flex-row justify-between items-center ">
+      
     </div>
 
   </div>
 
   <!-- Space -->
-  <div class="py-36" id="about-me"></div>
+  <div class="py-36" id="About"></div>
 
   <!-- about me -->
   <div class=" flex flex-col lg:flex-row justify-between mx-12 lg:mx-24 2xl:mx-48">
@@ -171,7 +98,7 @@
   </div>
 
   <!-- Space -->
-  <div class="py-36" id="skills"></div>
+  <div class="py-36" id="Skills"></div>
 
   <!-- skills -->
   <div class="flex items-center justify-center h-6 pb-10">
@@ -237,7 +164,7 @@
   </div>
 
   <!-- Space -->
-  <div class="py-36" id="projects"></div>
+  <div class="py-36" id="Projects"></div>
 
   <!-- my projects -->
   <div class="flex items-center justify-center h-6 pb-10">
@@ -324,7 +251,7 @@
 
 
   <!-- Space -->
-  <div class="py-36" id="contact"></div>
+  <div class="py-36" id="Contact"></div>
 
   <!-- Contact -->
   <div class="flex flex-row xs:pb-24 shadow-sm shadow-custom-red">
@@ -336,8 +263,8 @@
         <p class="w-10/12 xs:w-2/3 text-gray-300 text-sm xs:text-lg ">I am currently actively seeking new opportunities. If you have any
           questions or would like to reach out, I'll do my utmost to respond promptly!</p>
         <div class="flex flex-row w-10/12 xs:w-2/3 mt-2 xs:mt-4">
-          <a href="https://www.linkedin.com/in/emre-t-kaptan/" target="_blank"><img class="w-8 h-8 xs:w-16 xs:h-16 " src="/linkedin.svg" alt=""></a>
-          <a href="https://github.com/Tikkaaa3" target="_blank"><img class="w-8 h-8 xs:w-16 xs:h-16" src="/github2.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/emre-t-kaptan/" target="_blank"><img class="w-8 h-8 xs:w-16 xs:h-16  rounded-lg p-2 shadow-md shadow-custom-red hover:shadow-custom-blue mr-4" src="/linkedin.svg" alt=""></a>
+          <a href="https://github.com/Tikkaaa3" target="_blank"><img class="w-8 h-8 xs:w-16 xs:h-16 p-2 rounded-lg shadow-md  shadow-custom-red hover:shadow-custom-blue" src="/github.svg" alt=""></a>
         </div>  
       </div>
     </div>
