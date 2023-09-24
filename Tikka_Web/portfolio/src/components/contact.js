@@ -46,17 +46,17 @@ export default function contact () {
   <div class="w-9/12 xs:w-7/12">
     <h1 class="mb-2 font-bold">Your Mail</h1>
     <input type="text" placeholder="tikkaaa3@gmail.com"
-      class="caret-custom-blue mb-2 rounded-md bg-transparent border-2 border-black px-4 py-2.5 w-full">
+      class="caret-custom-blue mb-2 rounded-md bg-transparent border-2 border-custom-light-red px-4 py-2.5 w-full">
   </div>
   <div class="w-9/12 xs:w-7/12 my-4">
     <h1 class="mb-2 font-bold">Subject</h1>
     <input type="text" placeholder="Just wanted to say hi"
-      class="mb-2 rounded-md bg-transparent border-2 border-black px-4 py-2.5 w-full">
+      class="caret-custom-blue mb-2 rounded-md bg-transparent border-2 border-custom-light-red px-4 py-2.5 w-full">
   </div>
   <div class="w-9/12 xs:w-7/12">
     <h1 class="mb-2 font-bold">Message</h1>
     <input type="text" placeholder="Let's talk about..."
-      class="mb-2 rounded-md bg-transparent border-2 border-black px-4 py-2.5 w-full">
+      class="caret-custom-blue mb-2 rounded-md bg-transparent border-2 border-custom-light-red px-4 py-2.5 w-full">
   </div>
   <button id="custom-button" type="button"
     class="transition ease-in-out hover:-translate-y-1 w-9/12 xs:w-7/12 py-2.5 my-3 font-bold text-white p-2 rounded-md bg-gradient-to-r via-custom-light-red from-custom-dark-red to-custom-red hover:from-custom-blue hover:to-black">Send

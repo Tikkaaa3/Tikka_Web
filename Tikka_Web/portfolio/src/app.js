@@ -9,6 +9,7 @@ import rectangle from './components/rectangle.js';
 import skills from './components/skills.js';
 import cvUtil from './utils/cvUtils.js';
 import { setupScrollToTopButton } from './utils/scrollUtils.js';
+import video from './utils/video.js';
 
 
 export default function app() {
@@ -23,6 +24,7 @@ export default function app() {
   projects();
   contact();
   phoneNavbar();
+  video();
   let cvButton = document.getElementById("cvButton");
   cvButton.addEventListener("click", cvUtil);
 }

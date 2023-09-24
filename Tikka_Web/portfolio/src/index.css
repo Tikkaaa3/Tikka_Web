@@ -6,6 +6,19 @@ body {
 
   color:  whitesmoke;
 } 
+@media (max-width: 640px) {
+  .video-card {
+    width: 100%; /* Set the width to 100% for small screens */
+  }
+
+  /* Adjust the number of columns and spacing as needed */
+  #projectsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the spacing between project cards */
+  }
+}
 
 input {
   text-align: left;
@@ -13,8 +26,8 @@ input {
 
 input:focus {
 
-  border-color: #C3073F;
-  outline:#C3073F;
+  border-color: #3b82f6;
+  outline:#3b82f6;
 }
 
 .gradient-selection {

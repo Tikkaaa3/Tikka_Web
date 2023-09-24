@@ -1,6 +1,6 @@
 export default function main() {
 
-  const headWriting = "Talks about #python, #webdeveloper, #cloudcomputing, #softwaredeveloper, and #fullstackdeveloper";
+  const headWriting = "JavaScript - TypeScript | React.js | Node.js | Express.js | Python | Django | Flask | Cloud Computing | SQL | Unit Testing | Git | GitHub | RESTful APIs";
   const job = "Software Developer";
 
   const appContainer = document.getElementById("main")
