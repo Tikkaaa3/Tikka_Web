@@ -40,9 +40,10 @@ input:focus {
   text-align: center; /* Center text within the button */
   cursor: pointer; /* Change cursor on hover */
 
-  /* Define hover state */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+ /* Smooth transition for background color */
 }
+
+
 
 .video-container {
   width: 320px;
