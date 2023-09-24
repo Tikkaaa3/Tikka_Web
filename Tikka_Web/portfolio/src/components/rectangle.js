@@ -1,5 +1,5 @@
 export default function rectangle () {
-  const appContainer = document.getElementById("rectangle1")
+  const appContainer = document.getElementById("rectangle")
   const objects = [
     {
       title:"Projects",

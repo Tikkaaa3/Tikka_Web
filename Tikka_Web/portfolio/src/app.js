@@ -1,3 +1,4 @@
+import aboutMe from './components/aboutMe.js';
 import main from './components/main.js';
 import navbar from './components/navbar.js';
 import pdf from './components/pdf.js';
@@ -19,6 +20,7 @@ export default function app() {
   main();
   pdf();
   rectangle();
+  aboutMe();
 }
 
 

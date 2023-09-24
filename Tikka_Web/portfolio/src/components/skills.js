@@ -1,0 +1,44 @@
+export default function () {
+  const skillsArray = [
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+    {
+      skill:"JavaScript",
+      src:"./javascript.svg"
+    },
+  ];
+}

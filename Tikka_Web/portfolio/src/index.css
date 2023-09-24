@@ -47,14 +47,6 @@ input:focus {
   background-color: #6F2232; /* Custom dark red background color on hover */
 }
 
-#rectangle {
-  width: 1500px; /* Adjust the width as needed */
-  height: 120px; /* Adjust the height as needed */
-  border: 0.1px; /* Border color and width */
-  background-color: #1A1A1D; /* Background color */
-  margin: 0 auto; /* Center the div horizontally */
-}
-
 .video-container {
   width: 320px;
   height: 240px;

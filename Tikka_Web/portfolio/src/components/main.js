@@ -5,10 +5,10 @@ export default function main() {
 
   const appContainer = document.getElementById("main")
 
-  appContainer.innerHTML += ` 
+  appContainer.innerHTML += `
   <div class="flex flex-col items-center custom-sm:flex-row justify-between custom-sm:items-stretch">
     <div class="custom-sm:pl-48 order-2 custom-sm:order-1">
-      <h1 class="text-6xl 2xl:text-8xl font-bold my-8">Hello, I am</h1>
+      <h1 class="text-6xl 2xl:text-8xl font-bold my-8 bg-gradient-to-br from-custom-light-red via-black to-custom-red text-transparent bg-clip-text">Hello, I am</h1>
       <h1 class="text-6xl 2xl:text-8xl text-white font-bold my-8 cursor-pointer"> ${job} </h1>
       <p class="text-custom-white text-xl 2xl:text-2xl"> ${headWriting} </p>
       <button id="custom-button" class="pt-4">Show CV</button>

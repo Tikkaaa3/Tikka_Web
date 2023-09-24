@@ -9,16 +9,14 @@
   <link rel="stylesheet" href="./src/index.css">
 </head>
 
-<body>
+<body class="bg-gradient-to-br from-custom-black via-black to-custom-red">
 
   <a href="#" id="scrollToTopBtn"
     class="fixed bottom-16 right-5 xs:bottom-5 xs:right-5 w-8 h-8 xs:w-12 xs:h-12 flex items-center justify-center shadow-md shadow-custom-light-red hover:shadow-custom-blue">
     <img src="up.png" class="w-8 h-8 xs:w-12 xs:h-12" />
   </a>
 
-
-
-  <!-- Navbar -->
+<!-- Navbar -->
   <div
     class="hidden hover:text-white z-50 text-custom-light-red fixed backdrop-blur-lg top-0 left-0 right-0 xs:flex flex-row px-16 justify-between text-2xl p-5 shadow-md shadow-custom-light-red hover:shadow-custom-blue">
     <div id="navbarL">
@@ -35,12 +33,15 @@
 
   <!-- main -->
   <div
-    class="mb-48 my-64 h-16 custom-sm:my-48 md:h-24 mx-8 sm:mx-24 flex items-center bg-custom-black font-bold text-xl">
+    class="mb-48 my-64 h-16 custom-sm:my-48 md:h-24 mx-8 sm:mx-24 flex items-center font-bold text-xl">
     <div id="main">
 
     </div>
   </div>
 
+  <div>
+    <button type="button" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Teal to Lime</button>
+  </div>
 
   <!-- pdf -->
   <div id="pdf" class="mt-96 custom-xs:mt-72 custom-sm:mt-64 flex flex-auto">
@@ -54,7 +55,7 @@
   <div
     class="h-16 md:h-24 mx-8 sm:mx-24 flex items-center bg-custom-black font-bold text-xl shadow-md shadow-custom-light-red hover:shadow-custom-blue">
 
-    <div id="rectangle1" class="px-4 w-full flex flex-row justify-between items-center ">
+    <div id="rectangle" class="px-4 w-full flex flex-row justify-between items-center ">
 
     </div>
 
@@ -64,38 +65,7 @@
   <div class="py-36" id="About"></div>
 
   <!-- about me -->
-  <div class=" flex flex-col lg:flex-row justify-between mx-12 lg:mx-24 2xl:mx-48">
-
-    <div class="mb-4">
-      <div class="w-full h-full lg:w-96 lg:h-96 2xl:w-120 2xl:h-120 overflow-hidden">
-        <img src="/desktop.jpg" alt="JavaScript Logo" class="object-cover w-full h-full" />
-      </div>
-    </div>
-
-    <div class="lg:ml-24">
-      <h1 class="text-4xl mb-6 text-white font-bold">About Me</h1>
-      <p class="text-white xs:text-lg 2xl:text-xl">I am a motivated university student pursuing an IT degree with a
-        working knowledge in programming languages and web
-        development technologies. I have experience working with HTML,
-        CSS, JavaScript, React.js, Node.js, Python, Django, Flask, and other
-        frameworks and libraries. I have also worked with Git and GitHub
-        for version control and collaborative software development,
-        ensuring efficient teamwork and streamlined code management.
-        Moreover, I am familiar with cloud computing concepts, such as
-        SaaS, PaaS, IaaS, Hybrid Cloud, and Cloud Native applications,
-        demonstrating an awareness of modern infrastructure and
-        adaptability to emerging technologies.</p>
-      <button
-        class="pt-4 pl-2 pb-2 pr-2 text-xl font-bold hover:border-b-4 border-custom-light-red text-white">Education</button>
-      <button
-        class="pt-4 pl-2 pb-2 pr-2 text-xl font-bold hover:border-b-4 border-custom-light-red text-white">Certification</button>
-      <div class="py-4">
-        <ul class="list-disc list-inside">
-          <li>Uniwersytet WSB Merito Wrocław</li>
-          <li>Wrocław University of Science and Technology</li>
-        </ul>
-      </div>
-    </div>
+  <div id="aboutMe" class=" flex flex-col lg:flex-row justify-between mx-12 lg:mx-24 2xl:mx-48">
 
   </div>
 
