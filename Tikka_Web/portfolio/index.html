@@ -16,7 +16,7 @@
     <img src="up.png" class="w-12 h-12 py-2 hover:animate-bounce " />
   </a>
 
-<!-- Navbar -->
+  <!-- Navbar -->
   <div
     class="hidden hover:text-white z-50 text-white fixed backdrop-blur-lg top-0 left-0 right-0 xs:flex flex-row px-16 justify-between text-2xl p-5 shadow-lg shadow-custom-light-red hover:shadow-custom-blue">
     <div id="navbarL">
@@ -32,14 +32,13 @@
   <div class="p-20" id="Tikka"></div>
 
   <!-- main -->
-  <div
-    class="mb-48 my-64 h-16 custom-sm:my-48 md:h-24 mx-8 sm:mx-24 flex items-center font-bold text-xl">
+  <div class="mb-48 my-64 h-16 custom-sm:my-48 md:h-24 mx-8 sm:mx-24 flex items-center font-bold text-xl">
     <div id="main">
     </div>
   </div>
 
   <!-- pdf -->
-  <div id="pdf" class="mt-96 custom-xs:mt-72 custom-sm:mt-64 flex flex-auto">
+  <div id="pdf" hidden class="hidden mt-96 custom-xs:mt-72 custom-sm:mt-64 flex flex-auto">
 
   </div>
 
@@ -71,63 +70,7 @@
   <div class="flex items-center justify-center h-6 pb-10">
     <h1 class="text-4xl mb-6 font-bold text-white">Skills</h1>
   </div>
-
-  <div class="flex flex-row justify-center">
-    <section>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-10 max-w-screen-xl mx-auto">
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./javascript.svg" class="mx-auto h-16" alt="JavaScript" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">JavaScript</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./typescript.svg" class="mx-auto h-16" alt="JavaScript" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">TypeScript</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./react.svg" class="mx-auto h-16" alt="JavaScript" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">React</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./node-js.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">Node.js</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./python.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">Python</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./django.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">Django</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./flask.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">Flask</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./html.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">HTML</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./css.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">CSS</h6>
-        </div>
-
-        <div class="rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue">
-          <img src="./tailwind-css.svg" class="mx-auto h-16" alt="Vite" />
-          <h6 class="text-xl flex justify-center font-semibold mt-4">Tailwind</h6>
-        </div>
-
-      </div>
-    </section>
+  <div id="skillsList" class="flex flex-row justify-center">
   </div>
 
   <!-- Space -->
@@ -216,7 +159,6 @@
     </section>
   </div>
 
-
   <!-- Space -->
   <div class="py-36" id="Contact"></div>
 
@@ -259,18 +201,18 @@
           <h1 class="mb-2 font-bold">Message</h1>
           <input type="text" placeholder="Let's talk about..."
             class="mb-2 rounded-md bg-transparent border-2 border-black px-4 py-2.5 w-full">
-        </div> 
-        <button id="custom-button" type="button" class="transition ease-in-out hover:-translate-y-1 w-9/12 xs:w-7/12 py-2.5 my-3 font-bold text-white p-2 rounded-md bg-gradient-to-r via-custom-light-red from-custom-dark-red to-custom-red hover:from-custom-blue hover:to-black">Send
+        </div>
+        <button id="custom-button" type="button"
+          class="transition ease-in-out hover:-translate-y-1 w-9/12 xs:w-7/12 py-2.5 my-3 font-bold text-white p-2 rounded-md bg-gradient-to-r via-custom-light-red from-custom-dark-red to-custom-red hover:from-custom-blue hover:to-black">Send
           Message</button>
       </form>
     </div>
   </div>
 
-
   <!-- footer -->
   <div>
     <footer class="my-24 flex flex-row justify-center text-2xl font-bold">
-       Emre Tolga Kaptan  
+      Emre Tolga Kaptan
     </footer>
   </div>
 
@@ -323,7 +265,6 @@
 
     </div>
   </div>
-
 
   <div id="app">
 
