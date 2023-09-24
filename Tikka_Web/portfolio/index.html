@@ -12,13 +12,13 @@
 <body class="bg-gradient-to-br from-custom-black via-black to-custom-red">
 
   <a href="#" id="scrollToTopBtn"
-    class="fixed bottom-16 right-5 xs:bottom-5 xs:right-5 w-8 h-8 xs:w-12 xs:h-12 flex items-center justify-center shadow-md shadow-custom-light-red hover:shadow-custom-blue">
-    <img src="up.png" class="w-8 h-8 xs:w-12 xs:h-12" />
+    class="fixed bottom-16 right-5 rounded-full xs:bottom-5 xs:right-5 w-12 h-12 flex items-center justify-center shadow-xl shadow-custom-red hover:shadow-custom-blue">
+    <img src="up.png" class="w-12 h-12 py-2" />
   </a>
 
 <!-- Navbar -->
   <div
-    class="hidden hover:text-white z-50 text-custom-light-red fixed backdrop-blur-lg top-0 left-0 right-0 xs:flex flex-row px-16 justify-between text-2xl p-5 shadow-md shadow-custom-light-red hover:shadow-custom-blue">
+    class="hidden hover:text-white z-50 text-white fixed backdrop-blur-lg top-0 left-0 right-0 xs:flex flex-row px-16 justify-between text-2xl p-5 shadow-lg shadow-custom-light-red hover:shadow-custom-blue">
     <div id="navbarL">
 
     </div>
@@ -35,12 +35,7 @@
   <div
     class="mb-48 my-64 h-16 custom-sm:my-48 md:h-24 mx-8 sm:mx-24 flex items-center font-bold text-xl">
     <div id="main">
-
     </div>
-  </div>
-
-  <div>
-    <button type="button" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Teal to Lime</button>
   </div>
 
   <!-- pdf -->
@@ -53,7 +48,7 @@
 
   <!-- rectange -->
   <div
-    class="h-16 md:h-24 mx-8 sm:mx-24 flex items-center bg-custom-black font-bold text-xl shadow-md shadow-custom-light-red hover:shadow-custom-blue">
+    class="h-16 md:h-24 mx-8 sm:mx-24 flex items-center bg-transparent font-bold text-xl shadow-md shadow-custom-light-red hover:shadow-custom-blue">
 
     <div id="rectangle" class="px-4 w-full flex flex-row justify-between items-center ">
 
@@ -253,20 +248,19 @@
         <div class="w-9/12 xs:w-7/12">
           <h1 class="mb-2 font-bold">Your Mail</h1>
           <input type="text" placeholder="tikkaaa3@gmail.com"
-            class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+            class="mb-2 rounded-md bg-transparent border-2 border-black px-4 py-2.5 w-full">
         </div>
         <div class="w-9/12 xs:w-7/12 my-4">
           <h1 class="mb-2 font-bold">Subject</h1>
           <input type="text" placeholder="Just wanted to say hi"
-            class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
+            class="mb-2 rounded-md bg-transparent border-2 border-black px-4 py-2.5 w-full">
         </div>
         <div class="w-9/12 xs:w-7/12">
           <h1 class="mb-2 font-bold">Message</h1>
           <input type="text" placeholder="Let's talk about..."
-            class="mb-2 rounded-md bg-custom-black border border-custom-light-red px-4 py-2.5 w-full">
-        </div>
-        <button
-          class="w-9/12 xs:w-7/12 bg-custom-light-red hover:bg-custom-dark-red rounded-md py-2.5 my-3 font-bold">Send
+            class="mb-2 rounded-md bg-transparent border-2 border-black px-4 py-2.5 w-full">
+        </div> 
+        <button id="custom-button" type="button" class="w-9/12 xs:w-7/12 py-2.5 my-3 font-bold text-white p-2 rounded-md bg-gradient-to-r via-custom-light-red from-custom-dark-red to-custom-red hover:from-custom-blue hover:to-black">Send
           Message</button>
       </form>
     </div>
@@ -282,7 +276,7 @@
 
   <!-- phoneNav -->
   <div class="fixed xs:hidden bottom-0 left-0 right-0 backdrop-blur-lg p-2">
-    <div class="container mx-auto text-custom-red hover:text-custom-blue text-center flex flex-row justify-between">
+    <div class="container mx-auto text-white text-center flex flex-row justify-between">
       <!-- Your content goes here -->
       <div>
         <a href="#tikka">

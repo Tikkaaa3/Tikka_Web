@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 body {
-  background-color: #1A1A1D;
+
   color:  whitesmoke;
 } 
 
@@ -12,14 +12,19 @@ input {
 }
 
 input:focus {
-  background-color:#1A1A1D;
+
   border-color: #C3073F;
   outline:#C3073F;
 }
 
+.gradient-selection {
+  --selection-background: linear-gradient(to right, #ffffff, #ff0000); /* Define your gradient here */
+}
+
+/* Apply the gradient to the selection */
 ::selection {
-  background-color: #950740; /* Change this to your desired background color */
-  color: #ffffff; /* Change this to your desired text color */
+  background: #950740;
+  color: black; /* You can also adjust the text color */
 }
 
 #main {
@@ -27,10 +32,7 @@ input:focus {
 }
 
 #custom-button {
-  border-radius: 12px; /* Rounded corners for a circle */
   padding: 0.75rem; /* Adjust padding as needed */
-  background-color: #950740; /* Custom light red background color */
-  color: whitesmoke; /* Custom cyan text color */
   margin-left: 0.25rem; /* Adjust margin as needed */
   margin-right: 0.25rem; /* Adjust margin as needed */
   margin-top: 3rem; /* Adjust margin as needed */
@@ -40,11 +42,6 @@ input:focus {
 
   /* Define hover state */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
-}
-
-/* Define hover style for the button */
-#custom-button:hover {
-  background-color: #6F2232; /* Custom dark red background color on hover */
 }
 
 .video-container {
