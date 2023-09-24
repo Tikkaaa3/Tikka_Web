@@ -2,6 +2,7 @@ import aboutMe from './components/aboutMe.js';
 import main from './components/main.js';
 import navbar from './components/navbar.js';
 import pdf from './components/pdf.js';
+import projects from './components/projects.js';
 import rectangle from './components/rectangle.js';
 import skills from './components/skills.js';
 import cvUtil from './utils/cvUtils.js';
@@ -23,6 +24,7 @@ export default function app() {
   rectangle();
   aboutMe();
   skills();
+  projects();
   let cvButton = document.getElementById("cvButton");
   cvButton.addEventListener("click", cvUtil);
 }

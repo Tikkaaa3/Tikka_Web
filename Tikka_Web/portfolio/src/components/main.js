@@ -11,7 +11,7 @@ export default function main() {
       <h1 class="text-6xl 2xl:text-8xl font-bold my-8 bg-gradient-to-br from-custom-dark-red via-custom-light-red to-custom-red to-65% text-transparent bg-clip-text">Hello, I am</h1>
       <h1 class="text-6xl 2xl:text-8xl text-white font-bold my-8 cursor-pointer"> ${job} </h1>
       <p class="text-custom-white text-xl 2xl:text-2xl"> ${headWriting} </p>
-      <button id = "cvButton" type="button" class="py-3 px-4 my-12 mx-1 transition ease-in-out hover:-translate-y-1 text-white p-2 rounded-md bg-gradient-to-r via-custom-light-red from-custom-dark-red to-custom-red hover:from-custom-blue hover:to-black">Show CV</button>
+      <button id = "cvButton" type="button" class="py-3 px-4 mt-12 mb-36 xs:my-12 mx-1 transition ease-in-out hover:-translate-y-1 text-white p-2 rounded-md bg-gradient-to-r via-custom-light-red from-custom-dark-red to-custom-red hover:from-custom-blue hover:to-black">Show CV</button>
     <a href="./Emre_Tolga_Kaptan_Resume.pdf" download="Emre_Tolga_Kaptan_Resume.pdf">
     <button class="transition ease-in-out hover:-translate-y-1 bg-gradient-to-r from-custom-dark-red via-custom-light-red to-custom-red hover:from-custom-blue hover:to-black text-white rounded-md p-1">
       <span class="flex w-full bg-gradient-to-br from-custom-black to-black to-%60 text-white rounded p-2">
