@@ -7,6 +7,7 @@ import phoneNavbar from './components/phoneNavbar.js';
 import projects from './components/projects.js';
 import rectangle from './components/rectangle.js';
 import skills from './components/skills.js';
+import aboutButtons from './utils/aboutMeButtons.js';
 import cvUtil from './utils/cvUtils.js';
 import { setupScrollToTopButton } from './utils/scrollUtils.js';
 import video from './utils/video.js';
@@ -20,6 +21,7 @@ export default function app() {
   pdf();
   rectangle();
   aboutMe();
+  aboutButtons();
   skills();
   projects();
   contact();

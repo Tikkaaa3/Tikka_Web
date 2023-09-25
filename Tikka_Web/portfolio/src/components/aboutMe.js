@@ -73,16 +73,22 @@ export default function aboutMe() {
   const universitiesDiv = document.createElement("div");
   universitiesDiv.className = "py-4";
 
+
   const certificatesDiv = document.createElement("div");
   certificatesDiv.className = "py-4";
+  
+  
 
   // Create an unordered list element
   const universitiesList = document.createElement("ul");
   universitiesList.className = "list-disc list-inside";
+  universitiesList.hidden = false;
+  universitiesList.id = "universitiesDiv";
 
   const certificatesList = document.createElement("ul");
   certificatesList.className = "list-disc list-inside";
-
+  certificatesList.hidden = true;
+  certificatesList.id = "certificatesDiv";
   // Loop through the education array and create list items for each university
   universities.forEach((university) => {
     const listItem = document.createElement("li");
@@ -119,9 +125,9 @@ export default function aboutMe() {
 <div class="lg:ml-24">
   <h1 class="text-4xl mb-6 text-white font-bold">About Me</h1>
   <p class="text-white xs:text-lg 2xl:text-xl">${aboutParagraph}</p>
-  <button
+  <button id = "educationButton"
     class="pt-4 pl-2 pb-2 pr-2 text-xl font-bold hover:border-b-4 border-custom-light-red text-white">Education</button>
-  <button
+  <button id = "certificateButton"
     class="pt-4 pl-2 pb-2 pr-2 text-xl font-bold hover:border-b-4 border-custom-light-red text-white">Certification</button>
   ${education}  ${certification}
 </div>
