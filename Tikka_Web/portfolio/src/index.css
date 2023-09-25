@@ -74,3 +74,19 @@ input:focus {
 /* Prevents the video from capturing mouse events */
 }
 
+
+  .underline-animation::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #3b82f6;
+    transition: width 0.4s ease;
+  }
+
+  .underline-animation:hover::before {
+    width: 100%;
+  }
+
