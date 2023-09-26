@@ -5,13 +5,17 @@ export default function contact () {
       href:"https://github.com/Tikkaaa3"
     },
     {
+      icon: "/leetcode.png",
+      href:"https://leetcode.com/tikkaaa3/"
+    },
+    {
       icon:"/linkedin.svg",
       href:"https://www.linkedin.com/in/emre-t-kaptan/"
     },
     {
       icon: "/buymeacoffee.png",
       href:"https://www.buymeacoffee.com/tikkaaa13"
-    }
+    },
   ];
 
   let appContainer = document.getElementById("contact");
