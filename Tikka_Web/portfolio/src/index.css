@@ -98,3 +98,10 @@ input:focus {
   .fancy-char.fade {
     opacity: 1;
   }
+
+  /* Add this CSS to your stylesheet */
+#projectsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Adjust the minmax width as needed */
+  gap: 1rem; /* Adjust the gap between cards as needed */
+}

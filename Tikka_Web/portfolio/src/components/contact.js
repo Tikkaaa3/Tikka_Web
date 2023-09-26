@@ -17,7 +17,7 @@ export default function contact () {
   let appContainer = document.getElementById("contact");
 
   let contactParagraph = document.createElement("div");
-  contactParagraph.className = "flex-auto w-1/3"
+  contactParagraph.className = "flex-auto xs:w-1/3"
   
   let contactContainer = document.createElement("div");     
   contactContainer.className = "items-center flex flex-col"
@@ -28,7 +28,7 @@ export default function contact () {
     questions or would like to reach out, I'll do my utmost to respond promptly!</p>`
 
   let iconsContainer = document.createElement("div");
-  iconsContainer.className = "flex flex-row w-10/12 xs:w-2/3 mt-2 xs:mt-4";
+  iconsContainer.className = "flex flex-row w-10/12 md:w-2/3 mt-2 xs:mt-4";
 
   icons.forEach(icon => {
     let iconButton = document.createElement("a");
@@ -36,7 +36,7 @@ export default function contact () {
     iconButton.target = "_blank";
     iconButton.className = "mx-2";
     let iconImg = document.createElement("img");
-    iconImg.className = "w-10 h-10 xs:w-16 xs:h-16 p-2 rounded-lg shadow-md  shadow-custom-red hover:shadow-custom-blue"   
+    iconImg.className = "w-12 h-12 xs:w-16 xs:h-16 p-2 rounded-lg shadow-md  shadow-custom-red hover:shadow-custom-blue"   
     iconImg.src = icon.icon;
     iconButton.appendChild(iconImg);
     iconsContainer.appendChild(iconButton);
@@ -45,7 +45,7 @@ export default function contact () {
   contactParagraph.appendChild(contactContainer);
 
   let contactForm = document.createElement("div");
-  contactForm.className = "flex-auto w-2/3";
+  contactForm.className = "flex-auto pt-8 md:pt-0 md:w-2/3";
   contactForm.innerHTML = `<form id="form" action="" class="flex flex-col items-center ">
   <div class="w-9/12 xs:w-7/12">
     <h1 class="mb-2 font-bold">Your Mail</h1>

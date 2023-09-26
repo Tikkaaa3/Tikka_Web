@@ -16,7 +16,7 @@ export default function projects() {
       src: "portfolio.mp4",
       imgSrc: "./portfolio.png",
     },
-    // Add more project objects as needed
+    // Add more projects as needed...
   ];
 
   let appContainer = document.getElementById("projectsList");
@@ -24,12 +24,12 @@ export default function projects() {
   projectsArray.forEach((project) => {
     let projectDiv = document.createElement("div");
     projectDiv.className =
-      "flex flex-col justify-center items-center transform overflow-hidden relative rounded-lg mx-4 w-72 xs:w-120 lg:w-96 custom-sm:w-120 my-4 shadow-md shadow-custom-red hover:shadow-custom-blue relative video-card";
-    
+      "card flex flex-col justify-center items-center transform overflow-hidden relative rounded-lg mx-4 my-4 shadow-md shadow-custom-red hover:shadow-custom-blue relative video-card";
+
     let videoOverlay = document.createElement("div");
     videoOverlay.className =
       "absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-opacity-50 backdrop-blur-5 rounded-lg video-overlay";
-    
+
     let videoContainer = document.createElement("div");
     videoContainer.style.position = "relative";
     videoContainer.style.width = "100%";
@@ -63,7 +63,7 @@ export default function projects() {
     imgContainer.style.left = "0";
     imgContainer.style.width = "100%";
     imgContainer.style.transform = "translateY(-36%)"; // Center vertically
-    
+
     let prevImg = document.createElement("img");
     prevImg.loading = "lazy";
     prevImg.style.width = "100%"; // Make the image responsive to its container
