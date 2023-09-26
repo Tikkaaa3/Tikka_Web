@@ -93,6 +93,7 @@ export default function aboutMe() {
   universities.forEach((university) => {
     const listItem = document.createElement("li");
     listItem.textContent = university;
+    listItem.className = "hover:font-bold text-xl hover:text-custom-blue";
     universitiesList.appendChild(listItem);
   });
 
@@ -103,7 +104,7 @@ export default function aboutMe() {
     certificateLink.target = "_blank";
     const listItem = document.createElement("li");
     listItem.textContent = title;
-    listItem.className = "hover:font-bold";
+    listItem.className = "hover:font-bold text-xl hover:text-custom-blue";
     certificateLink.appendChild(listItem);
     certificatesList.appendChild(certificateLink);
   });

@@ -8,6 +8,10 @@ export default function contact () {
       icon:"/linkedin.svg",
       href:"https://www.linkedin.com/in/emre-t-kaptan/"
     },
+    {
+      icon: "/buymeacoffee.png",
+      href:"https://www.buymeacoffee.com/tikkaaa13"
+    }
   ];
 
   let appContainer = document.getElementById("contact");
@@ -42,23 +46,23 @@ export default function contact () {
 
   let contactForm = document.createElement("div");
   contactForm.className = "flex-auto w-2/3";
-  contactForm.innerHTML = `<form action="" class="flex flex-col items-center ">
+  contactForm.innerHTML = `<form id="form" action="" class="flex flex-col items-center ">
   <div class="w-9/12 xs:w-7/12">
     <h1 class="mb-2 font-bold">Your Mail</h1>
-    <input type="text" placeholder="tikkaaa3@gmail.com"
+    <input type="email" name="from_name" required placeholder="tikkaaa3@gmail.com"
       class="caret-custom-blue mb-2 rounded-md bg-transparent border-2 border-custom-light-red px-4 py-2.5 w-full">
   </div>
   <div class="w-9/12 xs:w-7/12 my-4">
     <h1 class="mb-2 font-bold">Subject</h1>
-    <input type="text" placeholder="Just wanted to say hi"
+    <input type="text" name="subject" required placeholder="Just wanted to say hi"
       class="caret-custom-blue mb-2 rounded-md bg-transparent border-2 border-custom-light-red px-4 py-2.5 w-full">
   </div>
   <div class="w-9/12 xs:w-7/12">
     <h1 class="mb-2 font-bold">Message</h1>
-    <input type="text" placeholder="Let's talk about..."
+    <input type="text" name="message" required placeholder="Let's talk about..."
       class="caret-custom-blue mb-2 rounded-md bg-transparent border-2 border-custom-light-red px-4 py-2.5 w-full">
   </div>
-  <button id="custom-button" type="button"
+  <button id="custom-button" type="submit"
     class="transition ease-in-out hover:-translate-y-1 w-9/12 xs:w-7/12 py-2.5 my-3 font-bold text-white p-2 rounded-md bg-gradient-to-r via-custom-light-red from-custom-dark-red to-custom-red hover:from-custom-blue hover:to-black">Send
     Message</button>
 </form>`;
