@@ -25,8 +25,8 @@ export default function eye() {
             let projectSkills = project.skills
             projectSkills.forEach((skill) => {
               console.log(skillElements[skill]);
-              skillElements[skill].className = "rounded-lg p-6 shadow-md shadow-green-400 hover:shadow-custom-blueshadow-custom-blue";
-              setTimeout(() => {skillElements[skill].className = "rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blueshadow-custom-blue"}, 3000)
+              skillElements[skill].className = "rounded-lg p-6 shadow-lg shadow-green-500 hover:shadow-custom-blue";
+              setTimeout(() => {skillElements[skill].className = "rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue"}, 5000)
             })
 
           }
