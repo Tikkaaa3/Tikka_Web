@@ -9,6 +9,7 @@ import rectangle from './components/rectangle.js';
 import skills from './components/skills.js';
 import aboutButtons from './utils/aboutMeButtons.js';
 import cvUtil from './utils/cvUtils.js';
+import eye from './utils/eye.js';
 import fancy from './utils/fancy.js';
 import { setupScrollToTopButton } from './utils/scrollUtils.js';
 import sendEmail from './utils/sendEmail.js';
@@ -31,6 +32,7 @@ export default function app() {
   video();
   sendEmail();
   fancy();
+  eye();
   let cvButton = document.getElementById("cvButton");
   cvButton.addEventListener("click", cvUtil);
 }

@@ -1,46 +1,7 @@
+import { skillsArray } from "../../data/skillsArray";
+
 export default function skills() {
-  const skillsArray = [
-    {
-      skill: "JavaScript",
-      src: "./javascript.svg",
-    },
-    {
-      skill: "TypeScript",
-      src: "./typescript.svg",
-    },
-    {
-      skill: "React",
-      src: "./react.svg",
-    },
-    {
-      skill: "Node.js",
-      src: "./node-js.svg",
-    },
-    {
-      skill: "Python",
-      src: "./python.svg",
-    },
-    {
-      skill: "Django",
-      src: "./django.svg",
-    },
-    {
-      skill: "Flask",
-      src: "./flask.svg",
-    },
-    {
-      skill: "HTML",
-      src: "./html.svg",
-    },
-    {
-      skill: "CSS",
-      src: "./css.svg",
-    },
-    {
-      skill: "Tailwind",
-      src: "./tailwind-css.svg",
-    },
-  ];
+
   let appContainer = document.getElementById("skillsList");
 
   const skillsDiv = document.createElement("div");
@@ -48,6 +9,7 @@ export default function skills() {
 
   skillsArray.forEach((skill) => {
     let skillDiv = document.createElement("div");
+    skillDiv.id = skill.skill;
     skillDiv.className = "rounded-lg p-6 shadow-md shadow-custom-red hover:shadow-custom-blue";
     let skillImg = document.createElement("img");
     skillImg.src = skill.src; // Access src directly from the skill object

@@ -1,30 +1,14 @@
-// projects.js
+import { projectsArray } from "../../data/projectsArray";
+
 export default function projects() {
-  const projectsArray = [
-    {
-      project: "JavaScript Web-Site 1",
-      src: "portfolio.mp4",
-      imgSrc: "./portfolio.png",
-    },
-    {
-      project: "JavaScript Web-Site 2",
-      src: "portfolio.mp4",
-      imgSrc: "./portfolio.png",
-    },
-    {
-      project: "JavaScript Web-Site 3",
-      src: "portfolio.mp4",
-      imgSrc: "./portfolio.png",
-    },
-    // Add more projects as needed...
-  ];
+  
 
   let appContainer = document.getElementById("projectsList");
 
   projectsArray.forEach((project) => {
     let projectDiv = document.createElement("div");
     projectDiv.className =
-      "card flex flex-col justify-center items-center transform overflow-hidden relative rounded-lg mx-4 my-4 shadow-md shadow-custom-red hover:shadow-custom-blue relative video-card";
+      "card flex flex-col relative rounded-lg mx-4 my-4 shadow-md shadow-custom-red hover:shadow-custom-blue relative video-card";
 
     let videoOverlay = document.createElement("div");
     videoOverlay.className =
@@ -73,6 +57,41 @@ export default function projects() {
 
     imgContainer.appendChild(prevImg);
     projectDiv.appendChild(imgContainer);
+
+    // Button container at the bottom-right corner
+    let buttonContainer = document.createElement("div");
+    buttonContainer.className =
+      "flex flex-row absolute bottom-4 right-4 space-x-2";
+
+    // Button 1
+    let button1 = document.createElement("a");
+    button1.href = project.projectSrc;
+    button1.target = "_blank";
+    button1.className =
+      "p-2 rounded-full";
+    let button1Img = document.createElement("img");
+    button1Img.src = "/code.png";
+    button1Img.alt = "code 1";
+    button1Img.className = "w-6 h-6 xs:w-12 xs:h-12";
+    button1.appendChild(button1Img);
+
+    // Button 2
+    let button2 = document.createElement("a");
+    button2.id = "eyeButton";
+    button2.href = "#Skills";
+    button2.className =
+      "p-2  rounded-full";
+    let button2Img = document.createElement("img");
+    button2Img.src = "/eye.png";
+    button2Img.id = "eyeButton";
+    button2Img.alt = project.project;
+    button2Img.className = "w-6 h-6 xs:w-12 xs:h-12 hover:cursor-pointer";
+    button2.appendChild(button2Img);
+
+    buttonContainer.appendChild(button1);
+    buttonContainer.appendChild(button2);
+    projectDiv.appendChild(buttonContainer);
+
     appContainer.appendChild(projectDiv);
   });
 }
